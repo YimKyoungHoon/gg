@@ -1,0 +1,74 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul, li, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#gallery {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+}
+#gallery h1 {
+  font: bold 30px/1 "arial";
+  color: #fff;
+  position: absolute;
+  top: 15vh;
+  left: 5vw;
+  z-index: 5;
+}
+#gallery .showBox {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#gallery .showBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#gallery .control {
+  width: 60%;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  bottom: 20vh;
+  right: 0;
+}
+#gallery .control ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#gallery .control ul li {
+  float: left;
+  margin-right: 20px;
+}
+#gallery .control ul li a {
+  font: bold 12px/1 "arial";
+  color: #777;
+}
+#gallery .control ul li.on a {
+  color: #fff;
+}
+#gallery .control div {
+  margin: 20px;
+  font-size: 14px;
+  color: #888;
+}
+#gallery .control div strong {
+  font-size: 40px;
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
